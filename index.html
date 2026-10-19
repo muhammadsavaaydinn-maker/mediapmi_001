@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Pembelajaran Statistika</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HALAMAN DEPAN ================= -->
+<main class="home" id="home">
+
+  <header class="top">
+        <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" aria-label="Tentang pembuat media" aria-expanded="false" aria-controls="menuBox">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="menu-box" id="menuBox" role="dialog" aria-label="Nama pembuat" hidden>
+        <small>Nama pembuat</small>
+        <b>Muhammad Sava Aydin</b>
+      </div>
+    </div>
+  </header>
+
+  <section class="mid">
+    <div class="title">
+            <h1 data-t="STATISTIKA">STATISTIKA</h1>
+      <p class="sub">Mean, median, dan modus · pilih satu kotak untuk mulai belajar</p>
+    </div>
+
+    <nav class="cards4" aria-label="Menu belajar">
+      <a class="mc" style="--i:0;--c:#ffc933;--t:#fff3c9" href="#/materi">
+        <span class="let" aria-hidden="true">A</span>
+        <div class="art"><svg viewBox="0 0 300 150" aria-hidden="true"><rect x="28" y="36" width="76" height="78" rx="12" fill="#fff" stroke="#1b1f3b" stroke-width="3"/><rect x="112" y="36" width="76" height="78" rx="12" fill="#6a3df0" stroke="#1b1f3b" stroke-width="3"/><rect x="196" y="36" width="76" height="78" rx="12" fill="#c6f432" stroke="#1b1f3b" stroke-width="3"/><g font-family="Plus Jakarta Sans,sans-serif" font-weight="800" text-anchor="middle" font-size="30"><text x="66" y="87" fill="#1b1f3b">x̄</text><text x="150" y="87" fill="#fff">Me</text><text x="234" y="87" fill="#1b1f3b">Mo</text></g></svg></div>
+        <div class="mt"><b>Materi</b><small>Mean, median, dan modus</small></div>
+      </a>
+      <a class="mc" style="--i:1;--c:#ff8a5b;--t:#ffe2d6" href="#/simulasi">
+        <span class="let" aria-hidden="true">B</span>
+        <div class="art"><svg viewBox="0 0 300 150" aria-hidden="true"><path d="M40 78 90 34l50 44h-12v44H52V78z" fill="#fff" stroke="#1b1f3b" stroke-width="3" stroke-linejoin="round"/><rect x="80" y="92" width="20" height="30" fill="#6a3df0"/><line x1="30" y1="128" x2="270" y2="128" stroke="#1b1f3b" stroke-width="3" stroke-dasharray="8 6"/><circle cx="158" cy="110" r="14" fill="#6a3df0" stroke="#1b1f3b" stroke-width="3"/><g transform="rotate(-8 225 80)"><rect x="192" y="36" width="64" height="88" rx="9" fill="#fff" stroke="#1b1f3b" stroke-width="3"/><text x="224" y="96" text-anchor="middle" font-size="38" font-weight="800" fill="#e63d7f" font-family="Plus Jakarta Sans,sans-serif">7</text></g></svg></div>
+        <div class="mt"><b>Simulasi</b><small>Kunjungan dan kartu</small></div>
+      </a>
+      <a class="mc" style="--i:2;--c:#8d6bff;--t:#e6defe" href="#/kuis">
+        <span class="let" aria-hidden="true">C</span>
+        <div class="art"><svg viewBox="0 0 300 150" aria-hidden="true"><rect x="92" y="14" width="116" height="124" rx="12" fill="#fff" stroke="#1b1f3b" stroke-width="3"/><text x="150" y="80" text-anchor="middle" font-size="48" font-weight="800" fill="#1b1f3b" font-family="Plus Jakarta Sans,sans-serif">10</text><text x="150" y="40" text-anchor="middle" font-size="14" font-weight="800" fill="#6a3df0" font-family="Plus Jakarta Sans,sans-serif">SOAL</text><path d="M114 108l9 9 18-20" fill="none" stroke="#2f9e44" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><line x1="152" y1="108" x2="190" y2="108" stroke="#d6d6ea" stroke-width="6" stroke-linecap="round"/></svg></div>
+        <div class="mt"><b>Soal</b><small>10 soal untuk dikerjakan sendiri</small></div>
+      </a>
+    </nav>
+  </section>
+</main>
+
+<!-- ================= LEMBAR 1 : MATERI ================= -->
+<section class="sheet" id="p-materi" aria-label="Materi statistika">
+  <header class="bar"><button class="back" data-back>‹ Kembali</button><h2>Materi: Mean, Median, dan Modus</h2></header>
+  <div class="wrap two">
+    <nav class="toc" aria-label="Daftar isi">
+      <b>Isi materi</b>
+      <button data-go="m1">Bagian 1 · Data dan ukuran pemusatan</button>
+      <button data-go="m2">Bagian 2 · Mean (rata-rata)</button>
+      <button data-go="m3">Bagian 3 · Median (nilai tengah)</button>
+      <button data-go="m4">Bagian 4 · Modus (paling sering)</button>
+      <button data-go="m5">Bagian 5 · Memilih ukuran yang tepat</button>
+      <button data-go="m6">Rangkuman</button>
+    </nav>
+    <article class="doc">
+      <section id="m1">
+        <h3>Bagian 1 · Data dan ukuran pemusatan</h3>
+<div class="cols"><div>
+        <p><b>Data</b> adalah kumpulan keterangan yang dikumpulkan, misalnya banyak buku yang dibaca setiap siswa dalam sebulan. Kalau datanya banyak, kita butuh <b>satu nilai</b> yang bisa mewakili seluruh data. Nilai itu disebut <b>ukuran pemusatan data</b>.</p>
+        <p class="tip">Contoh: lima siswa membaca 4, 6, 5, 8, dan 7 buku. Daripada menyebut lima angka, kita cukup bilang “rata-rata sekitar 6 buku”.</p>
+</div><div>
+<p>Ada tiga ukuran pemusatan data:</p>
+        <ol>
+          <li><b>Mean</b>: rata-rata, hasil membagi jumlah data dengan banyak data.</li>
+          <li><b>Median</b>: nilai tengah setelah data diurutkan.</li>
+          <li><b>Modus</b>: nilai yang paling sering muncul.</li>
+        </ol>
+        <p><b>Cek pemahaman:</b></p>
+        <details><summary>Ukuran pemusatan mana yang berkaitan dengan “paling sering muncul”?</summary><p class="ans">Modus.</p></details>
+</div></div>
+      </section>
+
+      <section id="m2">
+        <h3>Bagian 2 · Mean (rata-rata)</h3>
+        <div class="rule"><p class="fx">Mean = jumlah semua data ÷ banyak data</p></div>
+        <div class="cols"><div>
+        <p class="ex">Contoh 1. Data: 4, 6, 5, 8, 7<br>Jumlah = 4 + 6 + 5 + 8 + 7 = 30<br>Banyak data = 5<br>Mean = 30 ÷ 5 = <b>6</b></p>
+        <p class="tip">Bayangkan lima teman punya 4, 6, 5, 8, dan 7 koin. Kalau semua koin dikumpulkan lalu dibagi rata, setiap anak mendapat 6 koin. Itulah mean.</p>
+</div><div>
+        <p><b>Mean dari tabel frekuensi.</b> Kalikan setiap nilai dengan frekuensinya, jumlahkan, lalu bagi dengan jumlah frekuensi.</p>
+        <div class="scroll-x"><table class="tab">
+          <thead><tr><th>Nilai (x)</th><th>Frekuensi (f)</th><th>f × x</th></tr></thead>
+          <tbody><tr><td>6</td><td>2</td><td>12</td></tr><tr><td>7</td><td>3</td><td>21</td></tr><tr><td>8</td><td>4</td><td>32</td></tr><tr><td>9</td><td>1</td><td>9</td></tr><tr><td><b>Jumlah</b></td><td><b>10</b></td><td><b>74</b></td></tr></tbody>
+        </table></div>
+        <p class="ex">Mean = 74 ÷ 10 = <b>7,4</b></p>
+</div></div>
+        <p><b>Latihan cepat</b> (klik untuk melihat jawaban):</p>
+        <details><summary>Mean dari 10, 20, 30</summary><p class="ans">(10 + 20 + 30) ÷ 3 = 20</p></details>
+        <details><summary>Mean dari 2, 3, 3, 4, 8</summary><p class="ans">(2 + 3 + 3 + 4 + 8) ÷ 5 = 20 ÷ 5 = 4</p></details>
+      </section>
+
+      <section id="m3">
+        <h3>Bagian 3 · Median (nilai tengah)</h3>
+<div class="rules">
+<div class="rule"><h4>Langkah mencari median</h4>
+          <p><b>1.</b> Urutkan data dari yang terkecil ke terbesar.</p>
+          <p><b>2.</b> Cari nilai yang tepat di tengah.</p>
+          <p class="note">Jangan lupa mengurutkan dulu. Ini kesalahan yang paling sering terjadi.</p></div>
+<div class="rule"><h4>Banyak data ganjil atau genap?</h4>
+          <p class="fx">Ganjil: median = data di tengah</p>
+          <p class="fx">Genap: median = rata-rata dua data di tengah</p></div>
+<div class="rule"><h4>Contoh 2 · banyak data ganjil</h4>
+          <p>Data: 3, 9, 5, 7, 1</p>
+          <p>Diurutkan: 1, 3, <b>5</b>, 7, 9</p>
+          <p class="ex">Median = 5</p></div>
+<div class="rule"><h4>Contoh 3 · banyak data genap</h4>
+          <p>Data: 12, 2, 8, 4, 10, 6</p>
+          <p>Diurutkan: 2, 4, <b>6</b>, <b>8</b>, 10, 12</p>
+          <p class="ex">Median = (6 + 8) ÷ 2 = 7</p></div>
+</div>
+        <p><b>Median dari tabel frekuensi.</b> Pada tabel di Bagian 2 ada 10 data. Dua data tengah adalah data ke-5 dan ke-6. Dari urutan 6, 6, 7, 7, 7, 8, 8, 8, 8, 9 diperoleh data ke-5 = 7 dan data ke-6 = 8, sehingga median = (7 + 8) ÷ 2 = <b>7,5</b>.</p>
+        <p><button class="btn" data-open="simulasi">Coba urutkan kartu di Simulasi</button></p>
+        <details><summary>Median dari 9, 4, 7, 2, 5</summary><p class="ans">Diurutkan 2, 4, 5, 7, 9. Median = 5.</p></details>
+      </section>
+
+      <section id="m4">
+        <h3>Bagian 4 · Modus (paling sering muncul)</h3>
+<div class="cols"><div>
+        <p><b>Modus</b> adalah nilai yang paling banyak muncul dalam data. Kita tidak perlu menghitung apa pun, cukup menghitung berapa kali tiap nilai muncul.</p>
+        <p class="ex">Contoh 4. Data: 2, 3, 3, 4, 5, 3, 6<br>Angka 3 muncul 3 kali, paling banyak.<br>Modus = <b>3</b></p>
+        <p class="tip">Toko sepatu memakai modus untuk tahu ukuran sepatu yang paling laris, supaya stoknya paling banyak.</p>
+</div><div>
+        <p>Bentuk khusus modus:</p>
+        <ul>
+          <li><b>Dua modus</b>, jika dua nilai sama-sama paling sering. Data 1, 2, 2, 3, 3, 4 memiliki modus 2 dan 3.</li>
+          <li><b>Tidak ada modus</b>, jika semua nilai muncul sama banyak. Data 1, 2, 3, 4 tidak punya modus.</li>
+        </ul>
+        <p><button class="btn" data-open="simulasi">Coba modus di Simulasi</button></p>
+        <details><summary>Modus dari 5, 7, 7, 8, 8, 8, 9</summary><p class="ans">8, karena muncul 3 kali.</p></details>
+</div></div>
+      </section>
+
+      <section id="m5">
+        <h3>Bagian 5 · Memilih ukuran yang tepat</h3>
+        <div class="scroll-x"><table class="tab">
+          <thead><tr><th>Ukuran</th><th>Cocok dipakai ketika</th><th>Kelemahan</th></tr></thead>
+          <tbody>
+            <tr><td>Mean</td><td>Ingin gambaran keseluruhan data</td><td>Mudah bergeser oleh nilai yang sangat besar atau sangat kecil</td></tr>
+            <tr><td>Median</td><td>Ada data yang jauh berbeda dari yang lain</td><td>Data harus diurutkan dulu</td></tr>
+            <tr><td>Modus</td><td>Mencari yang paling banyak, populer, atau laris</td><td>Bisa ada dua modus atau tidak ada sama sekali</td></tr>
+          </tbody>
+        </table></div>
+        <div class="rule"><p class="ex">Contoh 5. Data: 5, 6, 6, 7, 56<br>Mean = (5 + 6 + 6 + 7 + 56) ÷ 5 = 80 ÷ 5 = 16<br>Median = 6, Modus = 6<br>Angka 56 membuat mean melonjak ke 16, padahal hampir semua data berada di sekitar 6. Di sini <b>median (atau modus) lebih mewakili data</b>.</p></div>
+        <details><summary>Rata-rata nilai 9 siswa putra adalah 80 dan 6 siswa putri adalah 90. Berapa rata-rata seluruh siswa?</summary><p class="ans">Jumlah = 9 × 80 + 6 × 90 = 720 + 540 = 1.260. Mean = 1.260 ÷ 15 = 84.</p></details>
+      </section>
+
+      <section id="m6">
+        <h3>Rangkuman</h3>
+        <ul>
+          <li><b>Mean</b> = jumlah semua data ÷ banyak data.</li>
+          <li><b>Median</b> = nilai tengah setelah diurutkan. Jika banyak data genap, ambil rata-rata dua data di tengah.</li>
+          <li><b>Modus</b> = nilai yang paling sering muncul. Boleh ada dua modus atau tidak ada modus.</li>
+          <li>Jika ada nilai yang ekstrem, median lebih cocok daripada mean.</li>
+        </ul>
+        <p><button class="btn" data-open="simulasi">Ke Simulasi</button> <button class="btn alt" data-open="kuis">Kerjakan Soal</button></p>
+      </section>
+    </article>
+  </div>
+</section>
+
+<!-- ================= LEMBAR 2 : SIMULASI ================= -->
+<section class="sheet" id="p-simulasi" aria-label="Simulasi statistika">
+  <header class="bar"><button class="back" data-back>‹ Kembali</button><h2>Simulasi Statistika</h2></header>
+  <div class="wrap narrow">
+    <div class="stabs" role="tablist">
+      <button class="stab on" role="tab" aria-selected="true" data-tab="visit" type="button">Kunjungan · modus</button>
+      <button class="stab" role="tab" aria-selected="false" data-tab="card" type="button">Kartu · median dan mean</button>
+    </div>
+
+    <!-- KUNJUNGAN -->
+    <div id="simVisit" class="simbox">
+      <p class="note">Tulis dua nama, lalu catat hari-hari ketika si pemain main ke rumah temannya. Klik sebuah hari untuk satu kunjungan, atau minta simulasi otomatis. Hari yang <b>paling sering</b> dikunjungi adalah <b>modus</b>.</p>
+      <div class="vnames">
+        <label>Nama pemain <input id="vWho" type="text" maxlength="14" placeholder="Tulis nama pemain"></label>
+        <label>Rumah teman <input id="vHome" type="text" maxlength="14" placeholder="Tulis nama teman"></label>
+      </div>
+      <div class="road" id="vRoad" aria-hidden="true">
+        <div class="vh vh1"><svg viewBox="0 0 60 50"><path d="M4 24 30 4l26 20h-6v22H10V24z" fill="#fff" stroke="#1b1f3b" stroke-width="3" stroke-linejoin="round"/><rect x="25" y="30" width="10" height="16" fill="#6a3df0"/></svg><span id="vH1"></span></div>
+        <div class="vh vh2"><svg viewBox="0 0 60 50"><path d="M4 24 30 4l26 20h-6v22H10V24z" fill="#ffe2d6" stroke="#1b1f3b" stroke-width="3" stroke-linejoin="round"/><rect x="25" y="30" width="10" height="16" fill="#e63d7f"/></svg><span id="vH2"></span></div>
+        <div class="path"></div>
+        <div class="walker" id="vWalker"><em id="vBubble"></em><b id="vInit">S</b></div>
+      </div>
+      <p class="note vlbl">Klik hari kunjungan:</p>
+      <div class="days" id="vDays"></div>
+      <div class="btns">
+        <label class="inl">Banyak kunjungan
+          <select id="vN"><option>7</option><option selected>10</option><option>14</option><option>20</option></select>
+        </label>
+        <button class="btn" id="vAuto" type="button">Simulasikan otomatis</button>
+        <button class="btn alt" id="vClear" type="button">Kosongkan</button>
+      </div>
+      <div class="vcols" id="vCols"></div>
+      <div class="readout" id="vOut" role="status" aria-live="polite"></div>
+    </div>
+
+    <!-- KARTU -->
+    <div id="simCard" class="simbox" hidden>
+      <p class="note">Bagikan kartu bernomor, lalu urutkan untuk mencari <b>median</b>, hitung <b>mean</b>, atau tandai <b>modus</b>.</p>
+      <div class="btns">
+        <label class="inl">Jumlah kartu
+          <select id="cardN"><option>5</option><option selected>7</option><option>8</option><option>9</option><option>10</option></select>
+        </label>
+        <button class="btn" id="cardDeal" type="button">Bagikan kartu</button>
+        <button class="btn alt" id="cardSort" type="button">Urutkan</button>
+        <button class="btn alt" id="cardMed" type="button">Cari median</button>
+        <button class="btn alt" id="cardMode" type="button">Tandai modus</button>
+        <button class="btn alt" id="cardMean" type="button">Hitung mean</button>
+      </div>
+      <div class="cardscroll"><div class="cardrow" id="cardRow"></div></div>
+      <div class="meanwrap" id="meanWrap" hidden>
+        <div class="bars" id="meanBars"></div>
+        <p class="note">Tinggi setiap batang adalah nilai kartu. Garis putus-putus ungu adalah <b>mean</b>: tinggi yang didapat jika semua batang diratakan.</p>
+      </div>
+      <div class="readout" id="cardOut" role="status" aria-live="polite">Tekan “Bagikan kartu” untuk mulai.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LEMBAR 3 : SOAL ================= -->
+<section class="sheet" id="p-kuis" aria-label="Soal statistika">
+  <header class="bar"><button class="back" data-back>‹ Kembali</button><h2>Soal Individu · 10 Soal</h2></header>
+  <div class="wrap narrow">
+    <div class="qhead">
+      <div class="row2">
+        <label>Nama siswa <input id="qName" type="text" placeholder="Tulis nama lengkap" maxlength="50" autocomplete="name" required></label>
+        <label>Kelas <input id="qKelas" type="text" placeholder="contoh: IX A" maxlength="12"></label>
+      </div>
+      <p class="note">Pilih satu jawaban di setiap soal. Setiap soal bernilai 10. Nilai = (jumlah benar ÷ 10) × 100. Tuntas jika nilai minimal 80. Setelah semua soal dijawab, tekan <b>Kirim ke Guru</b>.</p>
+    </div>
+    <form id="quizForm" novalidate></form>
+    <p class="warn" id="qWarn" role="alert" hidden></p>
+    <div class="btns"><button class="btn" id="qSend" type="button">Kirim ke Guru</button></div>
+    <p class="note" id="qStatus" role="status"></p>
+    <div class="result" id="qResult" hidden></div>
+  </div>
+</section>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

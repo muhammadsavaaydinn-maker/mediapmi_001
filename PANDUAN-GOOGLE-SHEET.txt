@@ -1,0 +1,13 @@
+PANDUAN GOOGLE SHEET
+Nilai siswa mengisi TABEL ANDA di tab pertama: judul nama | kelas | nilai | 1 ... 10.
+Kolom 1-10 kini berisi tulisan "Benar" (warna hijau) atau "Salah" (warna merah).
+Kolom N = waktu, kolom O = ID kiriman (jangan dihapus).
+Alamat Web app baru sudah dipasang di config.js.
+
+WAJIB: SKRIP DI GOOGLE HARUS DIGANTI SEKALI (supaya muncul Benar/Salah berwarna)
+1. Buka spreadsheet > Ekstensi > Apps Script.
+2. Hapus semua kode lama, tempel seluruh isi google-apps-script.gs, klik simpan.
+3. Pilih fungsi "uji" lalu Jalankan. Jika diminta izin: Tinjau izin > akun Anda > Lanjutan > Buka (tidak aman) > Izinkan.
+4. Cek spreadsheet: harus muncul satu baris "UJI COBA" dengan kotak hijau/merah. Hapus baris itu (termasuk kolom N dan O).
+5. Deploy > Kelola deployment > ikon pensil > Versi: "Versi baru" > Deploy.
+   Jalankan sebagai: Saya. Akses: Siapa saja. Alamat /exec tetap sama.
